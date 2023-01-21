@@ -6,7 +6,7 @@
 /*   By: msodor <msodor@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 18:21:25 by msodor            #+#    #+#             */
-/*   Updated: 2022/11/26 15:13:33 by msodor           ###   ########.fr       */
+/*   Updated: 2023/01/16 16:51:01 by msodor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 
 # include <unistd.h>
 # include <string.h>
-# include <stdio.h>
 # include <stdarg.h>
 
 int		ft_printf(const char *format, ...);

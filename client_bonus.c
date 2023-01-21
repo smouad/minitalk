@@ -6,7 +6,7 @@
 /*   By: msodor <msodor@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 09:47:21 by msodor            #+#    #+#             */
-/*   Updated: 2023/01/10 10:24:37 by msodor           ###   ########.fr       */
+/*   Updated: 2023/01/13 19:05:18 by msodor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_strlen(char *str)
 void	msg_handler(int sig)
 {
 	if (sig == SIGUSR1)
-		ft_printf("message resived secsefully.");
+		ft_printf("Message received successfully.\n");
 }
 
 int	main(int ac, char *av[])

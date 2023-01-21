@@ -6,7 +6,7 @@
 /*   By: msodor <msodor@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 09:46:49 by msodor            #+#    #+#             */
-/*   Updated: 2023/01/10 09:46:55 by msodor           ###   ########.fr       */
+/*   Updated: 2023/01/13 18:45:21 by msodor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	main(void)
 
 	pid = getpid();
 	ft_printf("PID : %d\n", pid);
-	siga.sa_sigaction = signal_handler;
+	siga.sa_sigaction = &signal_handler;
 	siga.sa_flags = SA_SIGINFO;
 	sigaction(SIGUSR1, &siga, NULL);
 	sigaction(SIGUSR2, &siga, NULL);
